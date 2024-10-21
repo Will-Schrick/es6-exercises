@@ -19,10 +19,10 @@ const ducplicateAndSum  = (a, b, ...numeros) => {
 //5
 const setExercise = () => {
    //Añade tu código aquí
-   const mySet = new Set([0,0,1,1,2,2,3,4,5]);
+   const mySet = new Set([1,1,2,2,3,4,5]);
    return mySet.size;
    };
-   console.log(setExercise());
+   //console.log(setExercise());
    
    
    
@@ -41,8 +41,9 @@ miMapa.set("profesion", "Desarrollador");
 const mapExercise = () => {
    //Añade tu código aquí
    
-   miMapa.set("profesion", "Genius");
+   miMapa.set("profesion", "Ingeniero de Software");
    miMapa.delete("edad");
+   return miMapa;
 };
 
 
