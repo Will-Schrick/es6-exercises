@@ -50,5 +50,21 @@ const mapExercise = () => {
 //8
 const countRepeated = (string) => {
    //Añade tu código aquí 
+   console.log(string);
+   const miRepeats = new Map()
+   for (let char of string) {
+      if (miRepeats.has(char)) {
+         miRepeats.set(char, miRepeats.get(char) + 1);
+      } else {
+         miRepeats.set(char, 1);
+      }
+   }
+   return miRepeats;
 };
+
+/*
+this one is hard for me!   We haven't used "has" I think.. and "get"
+ if a character exists in string, check against miRepeats. If it is there, count it +1.  If it's not, count as 1
+ then return miRepeats;
+ */
 
